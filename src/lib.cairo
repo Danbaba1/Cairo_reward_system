@@ -1,8 +1,13 @@
 use core::starknet::ContractAddress;
-use starknet::storage::Map;
+use starknet::storage::{
+    StoragePointerWriteAccess,
+    StoragePointerReadAccess,
+    Map
+};
 
 #[starknet::interface]
 trait IRewardSystem<TContractState> {
+    // Rest of your code remains the same...
     fn add_points(ref self: TContractState, user: ContractAddress, points: u64);
     fn redeem_points(ref self: TContractState, points: u64);
     fn get_points(self: @TContractState, user: ContractAddress) -> u64;
