@@ -2,9 +2,5 @@
 version = 1
 
 [[package]]
-<<<<<<< HEAD
 name = "project"
-=======
-name = "hello_world"
->>>>>>> d803190cc92e3bb224487b6f3a3c26a277145976
 version = "0.1.0"
